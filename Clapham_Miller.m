@@ -10,7 +10,7 @@ dS= -5;
 dC= 3000;
 T0= 298;
 
-%%
+%% Parameter Changes
 %Change in dCp
 dS= -9; %cal/molK
 T0= 298; %K
@@ -108,7 +108,7 @@ title("A.",'position',[255 1.01]);
 % legend("T_o at 298K", "T_o at 308K");
 % title("Changes in T_o seems to horizontally shift Ln(K_e_q) curves");
 
-%%
+%%Finding maximal slope
 
 %Temperature at Po=0.5 is T= -T0/ LambertW( -exp( -1+ delS/delCp))
 
@@ -183,7 +183,7 @@ xlabel("Temperature |T-T_o| [K]");
 ylabel("P_o");
 hold off;
 
-%% 9Figure plot
+%% Parameter changes on T_50 and maximal slope
 
 dS=-9;
 
