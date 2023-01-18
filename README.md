@@ -15,5 +15,10 @@ Clapham_Miller.m is a set of functions that will generate some graphs that expla
 
 Paper_Figs.m is a set of functions that were used to generate the graphs found in the research article: [HYPERLINK]
   dH_0th_order section generates the temperature sensitivity curves with the associated maximal slope (T_{50})
-  delCp Constant section generates the temperature sensitivity curves and the effect of varying the thermodynamic parameters as described by Clapham and Miller, 2011.
-  Explanatory Figures section generates the 
+  delCp Constant section generates the temperature sensitivity curves and the effect of varying the thermodynamic parameters as described by Clapham and Miller, 2011
+  Explanatory Figures section generates the representative figures for each condition that are described in detail in the paper. \Delta S^o_o = 0.
+  Parameter Space section generates a specific parameter space diagram at T=250K, this shows the different temperature sensitivities described in the Explanatory Figures section. The parameters graphed are the intercept and slope parameters of the \Delta C_{p, linear} model
+  delCp Linear Examples in Physiological Relevant Ranges section describes 
+  Po change in delS section keeps all the thermodynamic parameters of \Delta C_{p, linear} and T_o constant but changes \Delta S^o_o. On a linear P_o scale, the observed P_o(T) behaviors might be different than those observed when \Delta S^o_o = 0.
+  Po change in delS (log) section is the same Po change in delS figure, but on a log(P_o) scale. Here, the P_o(T) behavior observed is maintained as in the Explanatory Figures.
+  
