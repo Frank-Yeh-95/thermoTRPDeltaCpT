@@ -33,7 +33,7 @@ B. is changes in intercept.
   
 
 # Auxiliary Function and Data Repositories
-Experimental Data.mat is a file with the intercept and slopes from experimental data. ([Kim & Koh, 2022](doi.org/10.1016/J.BBRC.2022.03.056) ; [Liu et al., 2008](doi.org/10.1529/BIOPHYSJ.107.117697); [Dogan et al., 2006](doi.org/10.1016/j.jmb.2006.04.041); [Cliff et al., 2005](doi.org/10.1016/j.jmb.2004.12.017); [Gomez et al., 1995](doi.org/10.1002/prot.340220410); [Hearn et al., 1971](doi.org/10.1021/BI00781A013/ASSET/BI00781A013.FP.PNG_V03))
+Experimental Data.mat is a file with the intercept and slopes from experimental data. ([Kim & Koh, 2022](https://www.doi.org/10.1016/J.BBRC.2022.03.056) ; [Liu et al., 2008](https://www.doi.org/10.1529/BIOPHYSJ.107.117697); [Dogan et al., 2006](https://www.doi.org/10.1016/j.jmb.2006.04.041); [Cliff et al., 2005](https://www.doi.org/10.1016/j.jmb.2004.12.017); [Gomez et al., 1995](https://www.doi.org/10.1002/prot.340220410); [Hearn et al., 1971](https://www.doi.org/10.1021/BI00781A013/ASSET/BI00781A013.FP.PNG_V03))
 
 fire_map.m is a function that generates a red-orange-black based color map.
 
