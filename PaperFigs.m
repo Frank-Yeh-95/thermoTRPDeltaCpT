@@ -175,23 +175,23 @@ y=zeros(501,1);
 y= y+0.5;
 x= zeros(101,1);
 t0y= [0:1/100:1];
-figure('Units','inches','Position',[0 0 10 8.2]);
+figure('Units','centimeters','Position',[0 0 17.8 22]);
 
-annotation('textbox',[0.025 0.87 0.1 0.1],'String',{'$\bf{-\frac{A}{B}} \; ? \; T_o  \downarrow$'},...
+annotation('textbox',[0 0.84 0.1 0.1],'String',{'$\bf{-\frac{A}{B}} \; ? \; T_o  \downarrow$'},...
     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold');
 % annotation('textbox',[0.001 0.9 0.1 0.1],'String','$\bf{P_o(T_{o}) \rightarrow}$', ...
 %     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold');
-annotation('textbox',[0.001 0.9 0.1 0.1],'String','$\bf{\Delta C_p(T_o) \; ? \; 0\rightarrow}$', ...
+annotation('textbox',[0. 0.88 0.1 0.1],'String','$\bf{\Delta C_p(T_o) \; ? \; 0\rightarrow}$', ...
    'Interpreter','latex','EdgeColor','none','fontsize',11,'fontweight','bold');
 
-annotation('textbox',[0.025 0.75 0.1 0.1],'String','$\bf{-2\frac{A}{B} \leq T_o}$', ...
-    'Interpreter','latex','EdgeColor','none','fontsize',13,'fontweight','bold');
-annotation('textbox',[0.025 0.57 0.1 0.1],'String',{'$\bf{-2\frac{A}{B}  > T_o}$','','$\bf{-\frac{A}{B} < T_o}$'}, ...
-    'Interpreter','latex', 'EdgeColor','none','fontsize',13);
-annotation('textbox',[0.025 0.34 0.1 0.1],'String','$\bf{-\frac{A}{B} = T_o}$','Interpreter','latex', ...
-    'EdgeColor','none','fontsize',13);
-annotation('textbox',[0.025 0.125 0.1 0.1],'String',['$\bf{-\frac{A}{B} > T_o}$'],'Interpreter','latex', ...
-    'EdgeColor','none','fontsize',13);
+annotation('textbox',[0 0.75 0.1 0.1],'String','$\bf{-2\frac{A}{B} \leq T_o}$', ...
+    'Interpreter','latex','EdgeColor','none','fontsize',13,'fontweight','bold','VerticalAlignment','middle' );
+annotation('textbox',[0 0.525 0.1 0.1],'String',{'$\bf{-2\frac{A}{B}  > T_o}$','','$\bf{-\frac{A}{B} < T_o}$'}, ...
+    'Interpreter','latex', 'EdgeColor','none','fontsize',13,'VerticalAlignment','middle');
+annotation('textbox',[0 0.3 0.1 0.1],'String','$\bf{-\frac{A}{B} = T_o}$','Interpreter','latex', ...
+    'EdgeColor','none','fontsize',13,'VerticalAlignment','middle' );
+annotation('textbox',[0 0.05 0.1 0.1],'String',['$\bf{-\frac{A}{B} > T_o}$'],'Interpreter','latex', ...
+    'EdgeColor','none','fontsize',13,'VerticalAlignment','middle' );
 
 % annotation('textbox',[0.175 0.88 0.1 0.1],'String','\bf{Local Max.}', ...
 %     'EdgeColor','none','fontsize',12,'fontweight','bold',...
@@ -206,52 +206,60 @@ annotation('textbox',[0.025 0.125 0.1 0.1],'String',['$\bf{-\frac{A}{B} > T_o}$'
 %     'EdgeColor','none','fontsize',12,'fontweight','bold',...
 %     'HorizontalAlignment','center');
 
-annotation('textbox',[0.175 0.88 0.1 0.1],'String',['$\bf{\Delta C_p(T_o)<0}$'],'Interpreter','latex','EdgeColor','none', ...
+annotation('textbox',[0.205 0.84 0.1 0.1],'String',['$\bf{\Delta C_p(T_o)<0}$'],'Interpreter','latex','EdgeColor','none', ...
     'fontsize',14,'fontweight','bold',...
     'HorizontalAlignment','center');
 % annotation('textbox',[0.375 0.88 0.1 0.1],'String',{'$\bf{0}$'}, ...
 %     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold',...
 %     'HorizontalAlignment','center');
-annotation('textbox',[0.375 0.89 0.1 0.1],'String',{'$\bf{\Delta C_p(T_o)=0}$','$\bf{B<0}$'}, ...
+annotation('textbox',[0.42 0.85 0.1 0.1],'String',{'$\bf{\Delta C_p(T_o)=0}$','$\bf{B<0}$'}, ...
     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold',...
     'HorizontalAlignment','center');
 % annotation('textbox',[0.575 0.88 0.1 0.1],'String',{'$\bf{0}$'}, ...
 %     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold',...
 %     'HorizontalAlignment','center');
-annotation('textbox',[0.575 0.89 0.1 0.1],'String',{'$\bf{\Delta C_p(T_o)=0}$','$\bf{B>0}$'}, ...
+annotation('textbox',[0.635 0.85 0.1 0.1],'String',{'$\bf{\Delta C_p(T_o)=0}$','$\bf{B>0}$'}, ...
     'Interpreter','latex','EdgeColor','none','fontsize',12,'fontweight','bold',...
     'HorizontalAlignment','center');
-annotation('textbox',[0.775 0.88 0.1 0.1],'String','$\bf{\Delta C_p(T_o)>0}$','Interpreter','latex','EdgeColor','none','fontsize',14, ...
+annotation('textbox',[0.84 0.84 0.1 0.1],'String','$\bf{\Delta C_p(T_o)>0}$','Interpreter','latex','EdgeColor','none','fontsize',14, ...
     'fontweight','bold',...
     'HorizontalAlignment','center');
 
-annotation('line',[0.025 0.95],[0.3 0.3],'color',[0.5 0.5 0.5]);
-annotation('line',[0.025 0.95],[0.515 0.515],'color',[0.5 0.5 0.5]);
-annotation('line',[0.025 0.95],[0.73 0.73],'color',[0.5 0.5 0.5]);
-annotation('line',[0.025 0.95],[0.935 0.935],'color',[0.5 0.5 0.5]);
-annotation('line',[0.125 0.125],[0.05 0.965],'color',[0.5 0.5 0.5]);
-annotation('line',[0.32 0.32],[0.05 0.175],'color',[0.5 0.5 0.5]);
-annotation('line',[0.32 0.32],[0.225 0.4],'color',[0.5 0.5 0.5]);
-annotation('line',[0.32 0.32],[0.625 0.45],'color',[0.5 0.5 0.5]);
-annotation('line',[0.32 0.32],[0.975 0.675],'color',[0.5 0.5 0.5]);
-annotation('line',[0.52 0.52],[0.05 0.975],'color',[0.5 0.5 0.5]);
-annotation('line',[0.73 0.73],[0.05 0.175],'color',[0.5 0.5 0.5]);
-annotation('line',[0.73 0.73],[0.225 0.4],'color',[0.5 0.5 0.5]);
-annotation('line',[0.73 0.73],[0.45 0.625],'color',[0.5 0.5 0.5]);
-annotation('line',[0.73 0.73],[0.675 0.975],'color',[0.5 0.5 0.5]);
+annotation('line',[0.0 1],[0.225 0.225],'color',[0.5 0.5 0.5]);
+annotation('line',[0.0 1],[0.45 0.45],'color',[0.5 0.5 0.5]);
+annotation('line',[0.0 1],[0.675 0.675],'color',[0.5 0.5 0.5]);
+annotation('line',[0.0 1],[0.9 0.9],'color',[0.5 0.5 0.5]);
+annotation('line',[0.15 0.15],[0.0 0.95],'color',[0.5 0.5 0.5]);
+annotation('line',[0.3625 0.3625],[0.0 0.175],'color',[0.5 0.5 0.5]);
+annotation('line',[0.3625 0.3625],[0.275 0.45],'color',[0.5 0.5 0.5]);
+annotation('line',[0.3625 0.3625],[0.625 0.45],'color',[0.5 0.5 0.5]);
+annotation('line',[0.3625 0.3625],[0.975 0.675],'color',[0.5 0.5 0.5]);
+annotation('line',[0.575 0.575],[0.0 0.975],'color',[0.5 0.5 0.5]);
+annotation('line',[0.7875 0.7875],[0.0 0.175],'color',[0.5 0.5 0.5]);
+annotation('line',[0.7875 0.7875],[0.275 0.45],'color',[0.5 0.5 0.5]);
+annotation('line',[0.7875 0.7875],[0.45 0.625],'color',[0.5 0.5 0.5]);
+annotation('line',[0.7875 0.7875],[0.675 0.975],'color',[0.5 0.5 0.5]);
 %annotation('line',[0.73 0.73],[0.9 0.975],'color',[0.5 0.5 0.5]);
 
-annotation('textbox',[0.17 0.825 0.1 0.1],'String',{'Double Sensitivity',"(III)"},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.775 0.725 0.1 0.1],'String',{'Double Sensitivity','(I)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.2425 0.575 0.1 0.1],'String',{'Triple Sensitivity','(IIa)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.6475 0.575 0.1 0.1],'String',{'Triple Sensitivity','(IVc)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.2425 0.35 0.1 0.1],'String',{'Single Cold Sensitivity','(IIb)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.7125 0.35 0.1 0.1],'String',{'Single Hot Sensitivity','(IVb)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.3 0.125 0.1 0.1],'String',{'Triple Sensitivity','(IVa)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
-annotation('textbox',[0.6475 0.125 0.1 0.1],'String',{'Triple Sensitivity','(IIc)'},'EdgeColor','none','fontsize',14,'HorizontalAlignment','center');
+annotation('textbox',[0.205 0.8 0.1 0.1],'String',{'Double Sensitivity',"(III)"},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.84 0.67 0.1 0.1],'String',{'Double Sensitivity','(I)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.275 0.565 0.1 0.1],'String',{'Triple Sensitivity','(IIa)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.7 0.565 0.1 0.1],'String',{'Triple Sensitivity','(IVc)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.275 0.18 0.1 0.1],'String',{'Single Cold Sensitivity','(IIb)'},'EdgeColor', ...
+    'none','fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.75 0.18 0.1 0.1],'String',{'Single Hot Sensitivity','(IVb)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.375 0.115 0.1 0.1],'String',{'Triple Sensitivity','(IVa)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
+annotation('textbox',[0.675 0.115 0.1 0.1],'String',{'Triple Sensitivity','(IIc)'},'EdgeColor','none', ...
+    'fontsize',12,'HorizontalAlignment','center');
 
 
-subplot(4,4,1);
+subplot("position",[0.175 0.7 0.15 0.175]);
 %no sensitivity
 plot(T,Po_CpT_dC_slope_array(1,:),'linewidth',2,'color','k');
 yticks({});
@@ -265,7 +273,7 @@ xlim([0 501]);
 set(gca,'color','none');
 axis off;
 
-subplot(4,4,4);
+subplot("position",[0.8125 0.7 0.15 0.175]);
 %double
 plot(T, Po_CpT_dC_con_array(4,:),'linewidth',2,'color','k');
 hold on;
@@ -278,8 +286,8 @@ ylim([10^-40 1]);
 xlim([0 501]);
 set(gca,'color','none');
 axis off;
-
-subplot(4,4,5);
+% 
+subplot("position",[0.175 0.475 0.15 0.175]);
 %triple cold
 plot(T, Po_CpT_dC_slope_array(2,:),'linewidth',2,'color',ice(100,:));
 hold on;
@@ -293,7 +301,7 @@ xlim([0 501]);
 set(gca,'color','none');
 axis off;
 
-subplot(4,4,8);
+subplot("position",[0.8125 0.475 0.15 0.175]);
 %triple hot
 plot(T, Po_CpT_dC_con_array(3,:),'linewidth',2,'Color',fire(200, :));
 hold on;
@@ -306,7 +314,7 @@ xlim([0 501]);
 set(gca,'color','none');
 axis off;
 
-subplot(4,4,10);
+subplot("position",[0.3875 0.25 0.15 0.175]);
 %single cold
 plot(T, Po_CpT_dC_slope_array(3,:),'linewidth',2,'color',ice(150, :));
 hold on;
@@ -319,7 +327,7 @@ xlim([0 501]);
 set(gca,'color','none');
 axis off;
 
-subplot(4,4,11);
+subplot("position",[0.6 0.25 0.15 0.175]);
 %single heat
 plot(T, Po_CpT_dC_con_array(2,:),'linewidth',2,'color',fire(150, :));
 hold on;
@@ -331,8 +339,8 @@ ylim([10^-40 1]);
 xlim([0 501]);
 set(gca,'color','none');
 axis off;
-
-subplot(4,4,13);
+% 
+subplot("position",[0.175 0.025 0.15 0.175]);
 %bottom left (triple heat)
 plot(T, Po_CpT_dC_con_array(1,:),'linewidth',2,'color',fire(100, :));
 hold on;
@@ -345,7 +353,7 @@ xlim([0 501]);
 set(gca,'color','none');
 axis off;
 
-subplot(4,4,16);
+subplot("position",[0.8125 0.025 0.15 0.175]);
 %bottom right (triple cold)
 plot(T, Po_CpT_dC_slope_array(4,:),'linewidth',2,'Color',ice(200, :));
 hold on;
@@ -359,6 +367,129 @@ set(gca,'color','none');
 axis off;
 
 %% delCp Linear Examples
+
+T=[0:500];
+T_cel=T-273;
+T0= 250; %K
+dC_con=2000;
+dC_slope= 8; %cal/molK
+dC_array_Constant=[-2000:10:-1000];
+dC_slope_array= [-8:(8-6)/100:-6];
+
+dC_slope_total_array= zeros(4,501);
+dC_con_total_array= zeros(4,501);
+
+T_min= -200;
+T_max= 200;
+
+for i=1:4
+    dC_slope_total_array(i,:)= dC_con+dC_slope_array(i*33-32).*T;
+    dC_con_total_array(i,:)= dC_array_Constant(i*33-32)+dC_slope*T;
+end
+
+dC_max= max(max(max(dC_slope_total_array)),max(max(dC_con_total_array)));
+dC_min= min(min(min(dC_slope_total_array)),min(min(dC_con_total_array)));
+x=zeros(1,2);
+y=[dC_min dC_max];
+
+figure('units','inches','position',[0.5 0.5 15 10],'DefaultAxesFontSize',16);
+position3= [0.075 0.545 0.425 0.45];
+position4= [0.55 0.545 0.425 0.45];
+fig1=subplot('Position', position3);
+fig2=subplot('Position', position4);
+
+run ice_map.m
+run fire_map.m
+
+for i=1:4
+    subplot(fig1);
+    hold on;
+    colormap(ice);
+    plot(T_cel, dC_slope_total_array(i,:)./1000,'color',ice(i*40+48,:),'linewidth',2);
+    subplot(fig2);
+    hold on;
+    plot(T_cel, dC_con_total_array(i,:)./1000,'color',fire(i*40+48,:),'linewidth',2);
+end
+
+subplot(fig1);
+plot([T0-273 T0-273], y./1000, 'linestyle',':','color','black','linewidth',1.5);
+ylabel("\DeltaC_p [kcal/molK]");
+ylim([dC_min./1000 dC_max./1000]);
+xlim([T_min T_max]);
+xticklabels({});
+text(0.9*(T_max),0.9*(dC_max./1000-dC_min./1000)+dC_min./1000,"A",'fontsize',20);
+units= " $\frac{cal}{mol \cdot K^2}$";
+
+subplot(fig2);
+plot([T0-273 T0-273], y./1000, 'linestyle',':','color','black','linewidth',1.5);
+% ylabel("\DeltaC_p [kcal/molK]");
+ylim([dC_min./1000 dC_max./1000]);
+xlim([T_min T_max]);
+text(0.9*(T_max),0.9*(dC_max./1000-dC_min./1000)+dC_min./1000,"B",'fontsize',20);
+units= " $\frac{cal}{mol \cdot K}$";
+xticklabels({});
+
+dC_array= dC_slope_array;
+dS= 0; %cal/molK
+lnK_CpT_dC_array= zeros(101,501);
+K_CpT_dC_array= zeros(101,501);
+Po_CpT_dC_array= zeros(101,501);
+CpT_dCSlope_Contribution= zeros(101,501);
+for i= 1:101
+    [lnK_CpT_dC_array(i,:), K_CpT_dC_array(i,:), Po_CpT_dC_array(i,:)]= C_M_linearCpT(T, T0, dS, dC_array(i),dC_con,0);
+    CpT_dCSlope_Contribution(i,:)= ((dC_array(i)).*(T0^2./(2.*T) + T./2 - T0))./R +dS/R;
+end
+
+y=zeros(501,1);
+y= y+0.5;
+x= zeros(6201,1);
+t0y= [0:1/6200:1];
+position2= [0.075 0.075 0.425 0.45];
+subplot('Position', position2);
+hold on;
+for i= 1:4
+    plot(T_cel, Po_CpT_dC_array((i-1)*33+1,:),'linewidth',2,'Color',ice(i*40+48,:));
+end
+plot(T_cel,y, 'Color','black', 'LineStyle','--');
+plot([T0-273 T0-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
+units= " $\frac{cal}{mol \cdot K^2}$";
+xlim([T_min T_max]);
+ylim([-0.005 1]);
+xlabel("Temperature (T) [^oC]");
+ylabel("P_o");
+hold off;
+
+CpT_dCInter_Contribution= (dC_con.*(T0./T + log(T./T0)-1))./R;
+
+lnK_CpT_dC_con_array= zeros(101,501);
+K_CpT_dC_con_array= zeros(101,501);
+Po_CpT_dC_con_array= zeros(101,501);
+CpT_dCInter_Contribution1= zeros(101,501);
+for i= 1:101
+    [lnK_CpT_dC_con_array(i,:), K_CpT_dC_con_array(i,:), Po_CpT_dC_con_array(i,:)]= C_M_linearCpT(T, T0, dS, dC_slope, dC_array_Constant(i),0);
+    CpT_dCInter_Contribution1(i,:)= (dC_array_Constant(i).*(T0./T + log(T./T0)-1))./R;
+end
+
+position1= [0.55 0.075 0.425 0.45];
+subplot('Position', position1);
+y=zeros(501,1);
+y= y+0.5;
+hold on;
+for i= 1:4
+    plot(T_cel, Po_CpT_dC_con_array((i-1)*33+1,:),'linewidth',2,'Color',fire(i*40+48,:));
+end
+plot(T_cel,y, 'Color','black', 'LineStyle','--');
+plot([T0-273 T0-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
+units= " $\frac{kcal}{mol \cdot K}$";
+xlim([T_min T_max]);
+ylim([-0.005 1]);
+xlabel("Temperature (T) [^oC]");
+hold off;
+
+CpT_dCSlope_Contribution1= ones(501,1).*((dC_slope).*(T0^2./(2.*T) + T./2 - T0))./R;
+
+
+%% delCp Linear Examples lnkeq
 
 T=[0:500];
 T_cel=T-273;
@@ -440,13 +571,13 @@ position2= [0.075 0.075 0.425 0.45];
 subplot('Position', position2);
 hold on;
 for i= 1:4
-    plot(T_cel, Po_CpT_dC_array((i-1)*33+1,:),'linewidth',2,'Color',ice(i*40+48,:));
+    plot(T_cel, lnK_CpT_dC_array((i-1)*33+1,:),'linewidth',2,'Color',ice(i*40+48,:));
 end
 plot(T_cel,y, 'Color','black', 'LineStyle','--');
 plot([T0-273 T0-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
 units= " $\frac{cal}{mol \cdot K^2}$";
 xlim([T_min T_max]);
-ylim([-0.005 1]);
+ylim([-25 25]);
 xlabel("Temperature (T) [^oC]");
 ylabel("P_o");
 hold off;
@@ -468,24 +599,25 @@ y=zeros(501,1);
 y= y+0.5;
 hold on;
 for i= 1:4
-    plot(T_cel, Po_CpT_dC_con_array((i-1)*33+1,:),'linewidth',2,'Color',fire(i*40+48,:));
+    plot(T_cel, lnK_CpT_dC_con_array((i-1)*33+1,:),'linewidth',2,'Color',fire(i*40+48,:));
 end
 plot(T_cel,y, 'Color','black', 'LineStyle','--');
 plot([T0-273 T0-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
 units= " $\frac{kcal}{mol \cdot K}$";
 xlim([T_min T_max]);
-ylim([-0.005 1]);
+ylim([-25 25]);
 xlabel("Temperature (T) [^oC]");
 hold off;
 
 CpT_dCSlope_Contribution1= ones(501,1).*((dC_slope).*(T0^2./(2.*T) + T./2 - T0))./R;
 
 
+
 %% Parameter Space
-%CHANGE UP PARAMETERS
 run custommap_script.m
 run fire_map.m
 run ice_map.m
+load 'Experimental Data.mat'
 
 T=[0:500];
 T_cel=T-273;
@@ -537,11 +669,11 @@ for i=1:1001
     end
 end
 
-figure('Units','inches','Position',[0 0 15 10],'DefaultAxesFontSize',16);
+figure('Units','centimeters','Position',[0 0 17.8 11.8666666667],'DefaultAxesFontSize',14);
 imagesc(dC_slope_array,dC_con_array,WingNum_T, 'Alphadata', 0.25);
 colormap(custommap);
 set(gca,'YDir','normal');
-xticks([-12:4:12]);
+xticks(-12:4:12);
 yticks([-3000 -2000 -1000 0 1000 2000 3000]);
 yticklabels({'-3', '-2', '-1', '0', '1', '2', '3'});
 xlabel("Slope (B) [cal/molK^2]");
@@ -549,8 +681,8 @@ ylabel("Intercept (A) [kcal/molK]");
 
 n=0;
 
-dC_con_temp_array=[-5:0.01:5];
-dC_slope_temp_array=[-10:0.5:10];
+dC_con_temp_array=-5:0.01:5;
+dC_slope_temp_array=-10:0.5:10;
 
 
 dC_con_valid_line= -dC_slope_array*T0./2;
@@ -576,21 +708,30 @@ run ice_map.m
 % 
 % hold off;
 
-text(0.1, 2000, '\bf\Leftarrow\rmInter.-Only or \DeltaC_p constant','color', [0.25 0.25 0.25],'FontSize',14);
-text(7, 110, '\bf\Downarrow\rmSlope-Only','color', [0.25 0.25 0.25],'horizontalalignment','center','FontSize',14);
-text(dC_slope_array(200), dC_con_valid_line(300), "$\bf{-2\frac{A}{B} = T_o}$",'Interpreter','latex',...
-    'horizontalalignment','center','fontsize',20,'fontweight','bold','verticalalignment','middle');
-text(dC_slope_array(200), dC_con_1to3_line(125), ["$\bf{\Delta C_p(T_o)=0}$","$\bf{-\frac{A}{B}=T_o}$"],'Interpreter','latex',...
-    'horizontalalignment','center','fontsize',16,'fontweight','bold','verticalalignment','middle');
+text(0.1, 2000, '\bf\Leftarrow\rmInter.-Only or \DeltaC_p constant','color', [0.25 0.25 0.25],'FontSize',12);
+text(7, 250, '\bf\Downarrow\rmSlope-Only','color', [0.25 0.25 0.25],'horizontalalignment','center','FontSize',12);
+text(dC_slope_array(150), dC_con_valid_line(300), "$\bf{-2\frac{A}{B} = T_o}$",'Interpreter','latex',...
+    'horizontalalignment','center','fontsize',12,'fontweight','bold','verticalalignment','middle');
+text(dC_slope_array(250), dC_con_1to3_line(100), ["$\bf{\Delta C_p(T_o)=0}$","$\bf\Leftarrow{-\frac{A}{B}=T_o}$"],'Interpreter','latex',...
+    'horizontalalignment','center','fontsize',12,'fontweight','bold','verticalalignment','middle');
 
-annotation('textbox',[0.825 0.85 0.05 0.05],'string','I','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25]);
-annotation('textbox',[0.45 0.85 0.05 0.05],'string','IIc','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',ice(200,:));
-annotation('textbox',[0.22 0.7 0.05 0.05],'string','IIa','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',ice(100,:));
-annotation('textbox',[0.325 0.675 0.1 0.05],'string','\bf\Downarrow\rmIIb','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',ice(150,:));
-annotation('textbox',[0.825 0.25 0.05 0.05],'string','IVc','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',fire(200,:));
-annotation('textbox',[0.55 0.15 0.05 0.05],'string','IVa','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',fire(100,:));
-annotation('textbox',[0.60 0.315 0.1 0.05],'string','IVb \bf\Uparrow\rm','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',fire(150,:));
-annotation('textbox',[0.175 0.15 0.05 0.05],'string','III','edgecolor','none','horizontalalignment','center','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25]);
+annotation('textbox',[0.825 0.85 0.05 0.05],'string','I','edgecolor','none','horizontalalignment','center','fontsize',14,'color',[0.25 0.25 0.25]);
+annotation('textbox',[0.465 0.875 0.05 0.05],'string','IIc','edgecolor','none','horizontalalignment','center','fontsize',14,'color',ice(200,:));
+annotation('textbox',[0.15 0.8 0.05 0.05],'string','IIa','edgecolor','none','horizontalalignment','center','fontsize',14,'color',ice(100,:));
+annotation('textbox',[0.325 0.7 0.1 0.05],'string','\bf\Downarrow\rmIIb','edgecolor','none','horizontalalignment','center','fontsize',14,'color',ice(150,:));
+annotation('textbox',[0.825 0.25 0.05 0.05],'string','IVc','edgecolor','none','horizontalalignment','center','fontsize',14,'color',fire(200,:));
+annotation('textbox',[0.55 0.15 0.05 0.05],'string','IVa','edgecolor','none','horizontalalignment','center','fontsize',14,'color',fire(100,:));
+annotation('textbox',[0.60 0.315 0.1 0.05],'string','IVb \bf\Uparrow\rm','edgecolor','none','horizontalalignment','center','fontsize',14,'color',fire(150,:));
+annotation('textbox',[0.2 0.2 0.05 0.05],'string','III','edgecolor','none','horizontalalignment','center','fontsize',14,'color',[0.25 0.25 0.25]);
+
+%Experimental Data: Liu et al., 2008
+plot(Liu_2008(:,1),Liu_2008(:,2)*1000, 'LineStyle','none','marker','square','color','black','markerfacecolor','black','markersize',5)
+
+%Experimental Data: 
+plot(Protein_Protein(:,1),Protein_Protein(:,2)*1000, 'LineStyle','none','marker','pentagram','color','black','markerfacecolor','black','markersize',5)
+
+%Experimental Data: 
+plot(Unfolding(:,1),Unfolding(:,2)*1000, 'LineStyle','none','marker','^','color','black','markerfacecolor','black','markersize',5)
 
 %example traces
 for n = 1:size(dC_slope_temp_array,2)
@@ -600,7 +741,7 @@ for n = 1:size(dC_slope_temp_array,2)
             %single cold
             T=[150:dPo_T*1.5];
             [temp_lnk, temp_keq, temp_po]=C_M_linearCpT( T, T0, dS, dC_slope_temp_array(n), dC_con_temp_array(m)*1000, 0);
-            axes('Position',[0.4 0.65 0.075 0.075]);
+            axes('Position',[0.39 0.675 0.075 0.075]);
             plot(T, temp_po,'linewidth',1.5,'Color',ice(150,:));
             set(gca,'color','none');
             ylim([0 1]);
@@ -609,7 +750,7 @@ for n = 1:size(dC_slope_temp_array,2)
             %triple cold 1
             T=[0:dPo_T*1.5];
             [temp_lnk, temp_keq, temp_po]=C_M_linearCpT( T, T0, dS, dC_slope_temp_array(n), dC_con_temp_array(m)*1000, 0);
-            axes('Position',[0.4 0.8 0.075 0.075]);
+            axes('Position',[0.4 0.78 0.075 0.075]);
             plot(T, temp_po,'linewidth',1.5,'Color',ice(200,:));
             set(gca,'color','none');
             ylim([0 1]);
@@ -618,7 +759,7 @@ for n = 1:size(dC_slope_temp_array,2)
             %triple cold 2
             T=[0:400];
             [temp_lnk, temp_keq, temp_po]=C_M_linearCpT( T, T0, dS, dC_slope_temp_array(n), dC_con_temp_array(m)*1000, 0);
-            axes('Position',[0.255 0.65 0.075 0.075]);
+            axes('Position',[0.2 0.7 0.075 0.075]);
             plot(T, temp_po,'linewidth',1.5,'Color',ice(100,:));
             set(gca,'color','none');
             ylim([0 1]);
@@ -645,7 +786,7 @@ for n = 1:size(dC_slope_temp_array,2)
             %triple heat
             T=[0:T0*2];
             [temp_lnk, temp_keq, temp_po]=C_M_linearCpT( T, T0, dS, dC_slope_temp_array(n), dC_con_temp_array(m)*1000, 0);
-            axes('Position',[0.76 0.27 0.075 0.075]);
+            axes('Position',[0.78 0.27 0.075 0.075]);
             plot(T, temp_po,'linewidth',1.5,'Color',fire(200,:));
             set(gca,'color','none');
             ylim([0 1]);
@@ -673,156 +814,6 @@ for n = 1:size(dC_slope_temp_array,2)
 end
 
 hold off;
-
-%% delCp Linear Examples in Physiological Relevant Ranges
-%cold sensitive
-R=1.987; %cal/molK;
-T0= 250; %K
-T0_cold= 350; %K
-T=[0:500];
-T_cel=T-273;
-dC_con=14000;
-dC_slope_array= [-40:(40-25.0)/100:-25.0];
-
-dC_slope_total_array= zeros(4,501);
-
-T_min= 0;
-T_max= 100;
-
-for i=1:4
-    dC_slope_total_array(i,:)= dC_con+dC_slope_array(i*33-32).*T;
-end
-
-dC_max= max(max(dC_slope_total_array));
-dC_min= min(min(dC_slope_total_array));
-x=zeros(1,2);
-y=[dC_min dC_max];
-
-figure('units','inches','position',[0.5 0.5 15 10],'DefaultAxesFontSize',16);
-position_cold_dCp= [0.075 0.545 0.425 0.45];
-fig_cold_dCp=subplot('Position', position_cold_dCp);
-
-
-run ice_map.m
-run fire_map.m
-
-for i=1:4
-    subplot(fig_cold_dCp);
-    hold on;
-    colormap(ice);
-    plot(T_cel, dC_slope_total_array(i,:)./1000,'color',ice(i*40+48,:),'linewidth',2);
-end
-
-subplot(fig_cold_dCp);
-plot([T0_cold-273 T0_cold-273], y./1000, 'linestyle',':','color','black','linewidth',1.5);
-ylabel("\DeltaC_p [kcal/molK]");
-ylim([-2 10]);
-xlim([T_min T_max]);
-xticklabels({});
-text(0.9*(T_max-T_min)+T_min,0.9*(12)-2,"A",'fontsize',24);
-units= " $\frac{cal}{mol \cdot K^2}$";
-
-%cold Po
-dC_array= dC_slope_array;
-dS= -11; %cal/molK
-lnK_CpT_dC_array= zeros(101,501);
-K_CpT_dC_array= zeros(101,501);
-Po_CpT_dC_array= zeros(101,501);
-CpT_dCSlope_Contribution= zeros(101,501);
-for i= 1:101
-    [lnK_CpT_dC_array(i,:), K_CpT_dC_array(i,:), Po_CpT_dC_array(i,:)]= C_M_linearCpT(T, T0_cold, dS, dC_array(i),dC_con,0);
-    CpT_dCSlope_Contribution(i,:)= ((dC_array(i)).*(T0_cold^2./(2.*T) + T./2 - T0_cold))./R +dS/R;
-end
-
-y=zeros(501,1);
-y= y+0.5;
-x= zeros(6201,1);
-t0y= [0:1/6200:1];
-position_cold_Po= [0.075 0.075 0.425 0.45];
-fig_cold_Po= subplot('Position', position_cold_Po);
-hold on;
-for i= 1:4
-    plot(T_cel, Po_CpT_dC_array((i-1)*33+1,:),'linewidth',2,'Color',ice(i*40+48,:));
-end
-plot(T_cel,y, 'Color','black', 'LineStyle','--');
-plot([T0_cold-273 T0_cold-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
-units= " $\frac{cal}{mol \cdot K^2}$";
-xlim([T_min T_max]);
-ylim([-0.005 1]);
-xlabel("Temperature (T) [^oC]");
-ylabel("P_o");
-hold off;
-
-%CpT_dCInter_Contribution= (dC_con.*(T0./T + log(T./T0)-1))./R;
-
-
-
-%hot sensitive
-T=[0:500];
-T_cel=T-273;
-T0_hot= 240; %K
-dC_slope= 20; %cal/molK
-dC_array_Constant=[-4800:(4800-2400)/100:-2400];
-
-dC_con_total_array= zeros(4,501);
-
-T_min= -75;
-T_max= 50;
-
-for i=1:4
-    dC_con_total_array(i,:)= dC_array_Constant(i*33-32)+dC_slope*T;
-end
-
-dC_max= max(max(dC_con_total_array));
-dC_min= min(min(dC_con_total_array));
-x=zeros(1,2);
-y=[dC_min dC_max];
-
-position_hot_dCp= [0.55 0.545 0.425 0.45];
-fig_hot_dCp=subplot('Position', position_hot_dCp);
-
-run fire_map.m
-for i=1:4
-    subplot(fig_hot_dCp);
-    hold on;
-    colormap(fire);
-    plot(T_cel, dC_slope_total_array(i,:)./1000,'color',fire(i*40+48,:),'linewidth',2);
-end
-subplot(fig_hot_dCp);
-plot([T0_hot-273 T0_hot-273], [-5 15], 'linestyle',':','color','black','linewidth',1.5);
-% ylabel("\DeltaC_p [kcal/molK]");
-ylim([-2 10]);
-xlim([T_min T_max]);
-text(0.9*(T_max-T_min)+T_min,0.9*(12)-2,"B",'fontsize',24);
-units= " $\frac{cal}{mol \cdot K}$";
-xticklabels({});
-
-%hot Po
-lnK_CpT_dC_con_array= zeros(101,501);
-K_CpT_dC_con_array= zeros(101,501);
-Po_CpT_dC_con_array= zeros(101,501);
-CpT_dCInter_Contribution1= zeros(101,501);
-for i= 1:101
-    [lnK_CpT_dC_con_array(i,:), K_CpT_dC_con_array(i,:), Po_CpT_dC_con_array(i,:)]= C_M_linearCpT(T, T0_hot, dS, dC_slope, dC_array_Constant(i),0);
-end
-
-position1= [0.55 0.075 0.425 0.45];
-subplot('Position', position1);
-y=zeros(501,1);
-y= y+0.5;
-hold on;
-for i= 1:4
-    plot(T_cel, Po_CpT_dC_con_array((i-1)*33+1,:),'linewidth',2,'Color',fire(i*40+48,:));
-end
-plot(T_cel,y, 'Color','black', 'LineStyle','--');
-plot([T0_hot-273 T0_hot-273],[0 1],'color','k','linestyle',':','linewidth',1.5);
-units= " $\frac{kcal}{mol \cdot K}$";
-xlim([T_min T_max]);
-ylim([-0.005 1]);
-xlabel("Temperature (T) [^oC]");
-hold off;
-
-CpT_dCSlope_Contribution1= ones(501,1).*((dC_slope).*(T0^2./(2.*T) + T./2 - T0))./R;
 
 %% Po change in delta S
 
@@ -861,7 +852,7 @@ for i= 1:3
 end
 
 
-figure('Units','centimeters','Position',[1 1 33 16.5]);
+figure('Units','centimeters','Position',[0 0 17.8 8.9]);
 for i= 1:3
     for j=1:3
         colorcode_fire= fire(j*50+50,:)*((i+2)/4);
@@ -899,7 +890,7 @@ for i= 1:3
         plot(round(-(2*dC_con_array(j)/dC_slope +To))-273,temp_Po(round(-(2*dC_con_array(j)/dC_slope +To))),'marker','o','markeredgecolor','k','markersize',10);
         ylim([0 1]);
         xlim([-200 170]);
-        xlabel("Temperature (^oC)",'FontSize',12,'FontWeight','bold');
+        xlabel("Temp. (^oC)",'FontSize',12,'FontWeight','bold');
         set(gca,'fontweight','bold');
         set(gca,'fontsize',12);
         hold off;
@@ -925,7 +916,7 @@ for i= 1:3
     plot(To-273, temp_Po(To), 'marker','d','markerfacecolor','k','markeredgecolor','k','markersize',8);
     ylim([0 1]);
     xlim([-200 170]);
-    xlabel("Temperature (^oC)",'FontSize',12,'FontWeight','bold');
+    xlabel("Temp. (^oC)",'FontSize',10,'FontWeight','bold');
     ylabel("P_o");
     set(gca,'fontweight','bold');
     set(gca,'fontsize',12);
@@ -945,28 +936,28 @@ for j=1:4
     
         case 1
             toppos(1)=toppos(1)+0.015;
-            annotation('textbox',toppos,'string','I','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
+            annotation('textbox',toppos,'string','I','edgecolor','none','horizontalalignment','left','fontsize',12,'color',[0.25 0.25 0.25],'FontWeight','bold');
             
             bottompos(1)=toppos(1);
-            annotation('textbox',bottompos,'string','III','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
+            annotation('textbox',bottompos,'string','III','edgecolor','none','horizontalalignment','left','fontsize',12,'color',[0.25 0.25 0.25],'FontWeight','bold');
         case 2
             toppos(1)=toppos(1)-0.0075;
-            annotation('textbox',toppos,'string','IIa','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+            annotation('textbox',toppos,'string','IIa','edgecolor','none','horizontalalignment','right','fontsize',12,'color',ice(j*50,:),'FontWeight','bold');
             
             bottompos(1)=bottompos(1)+0.0075;
-            annotation('textbox',bottompos,'string','IVa','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+            annotation('textbox',bottompos,'string','IVa','edgecolor','none','horizontalalignment','left','fontsize',12,'color',fire(j*50,:),'FontWeight','bold');
         case 3
-            toppos(1)=toppos(1)-0.0075;
-            annotation('textbox',toppos,'string','IIb','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+            toppos(1)=toppos(1);
+            annotation('textbox',toppos,'string','IIb','edgecolor','none','horizontalalignment','right','fontsize',12,'color',ice(j*50,:),'FontWeight','bold');
             
-            bottompos(1)=bottompos(1)+0.0075;
-            annotation('textbox',bottompos,'string','IVb','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+            bottompos(1)=bottompos(1);
+            annotation('textbox',bottompos,'string','IVb','edgecolor','none','horizontalalignment','left','fontsize',12,'color',fire(j*50,:),'FontWeight','bold');
         case 0
            toppos(1)=toppos(1)+0.0075;
-           annotation('textbox',toppos,'string','IIc','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+           annotation('textbox',toppos,'string','IIc','edgecolor','none','horizontalalignment','left','fontsize',12,'color',ice(j*50,:),'FontWeight','bold');
            
-           bottompos(1)=bottompos(1)-0.0075;
-           annotation('textbox',bottompos,'string','IVc','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+           bottompos(1)=bottompos(1);
+           annotation('textbox',bottompos,'string','IVc','edgecolor','none','horizontalalignment','right','fontsize',12,'color',fire(j*50,:),'FontWeight','bold');
     end
 end
 
@@ -1096,27 +1087,27 @@ for j=1:4
     
         case 1
             toppos(1)=toppos(1)+0.015;
-            annotation('textbox',toppos,'string','I','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
+            annotation('textbox',toppos,'string','I','edgecolor','none','horizontalalignment','left','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
             
             bottompos(1)=toppos(1);
-            annotation('textbox',bottompos,'string','III','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
+            annotation('textbox',bottompos,'string','III','edgecolor','none','horizontalalignment','left','fontsize',20,'color',[0.25 0.25 0.25],'FontWeight','bold');
         case 2
             toppos(1)=toppos(1)-0.0075;
-            annotation('textbox',toppos,'string','IIa','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+            annotation('textbox',toppos,'string','IIa','edgecolor','none','horizontalalignment','right','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
             
             bottompos(1)=bottompos(1)+0.0075;
-            annotation('textbox',bottompos,'string','IVa','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+            annotation('textbox',bottompos,'string','IVa','edgecolor','none','horizontalalignment','left','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
         case 3
             toppos(1)=toppos(1)-0.0075;
-            annotation('textbox',toppos,'string','IIb','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+            annotation('textbox',toppos,'string','IIb','edgecolor','none','horizontalalignment','right','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
             
             bottompos(1)=bottompos(1)+0.0075;
-            annotation('textbox',bottompos,'string','IVb','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+            annotation('textbox',bottompos,'string','IVb','edgecolor','none','horizontalalignment','left','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
         case 0
            toppos(1)=toppos(1)+0.0075;
-           annotation('textbox',toppos,'string','IIc','edgecolor','none','horizontalalignment','left','Fontname','Cambria','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
+           annotation('textbox',toppos,'string','IIc','edgecolor','none','horizontalalignment','left','fontsize',20,'color',ice(j*50,:),'FontWeight','bold');
            
            bottompos(1)=bottompos(1)-0.0075;
-           annotation('textbox',bottompos,'string','IVc','edgecolor','none','horizontalalignment','right','Fontname','Cambria','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
+           annotation('textbox',bottompos,'string','IVc','edgecolor','none','horizontalalignment','right','fontsize',20,'color',fire(j*50,:),'FontWeight','bold');
     end
 end
